@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#0b1120">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="CyberCare">
+    <meta property="og:title" content="Cyber Hygiene Scorecard — CyberCare">
+    <meta
+      property="og:description"
+      content="Cek kebiasaan keamanan digitalmu lewat 10 pertanyaan singkat. Kenali langkah kecil untuk beraktivitas lebih aman."
+    >
+    <meta property="og:image" content="Logo%20RKS%20Web.png">
+    <meta property="og:image:alt" content="Logo RKS Web">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cyber Hygiene Scorecard — CyberCare">
+    <meta
+      name="twitter:description"
+      content="Cek kebiasaan keamanan digitalmu lewat 10 pertanyaan singkat."
+    >
+    <meta name="twitter:image" content="Logo%20RKS%20Web.png">
+    <title>Penilaian anonim · CyberCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="Logo Web CHS.png">
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <span class="logo">
+            <img src="Logo RKS Web.png" alt="">
+          </span>
+          <span>
+            <b>Cyber<span>Care</span></b>
+            <small>HYGIENE SCORECARD</small>
+          </span>
+        </a>
+        <div class="side-label">MENU UTAMA</div>
+        <a class="nav active" href="index.html">▦ &nbsp; Penilaian</a>
+        <a class="nav" href="login.html">▣ &nbsp; Login Admin</a>
+        <div class="side-note">
+          <b>Privacy first.</b>
+          <p>Nama opsional. Jangan masukkan email atau NIM.</p>
+        </div>
+        <small class="side-bottom">● CyberCare</small>
+      </aside>
+
+      <main class="main">
+        <header class="top">
+          <div>
+            <div class="eyebrow">KEAMANAN DIGITAL / PRIVASI</div>
+            <h1>Cyber Hygiene Scorecard</h1>
+            <p>Kenali kebiasaan digitalmu. Tingkatkan keamananmu.</p>
+          </div>
+          <span class="pill">● Anonim</span>
+        </header>
+
+        <section class="privacy">
+          <b>♧ &nbsp; Penilaian anonim</b>
+          <p>
+            Nama panggilan boleh diisi bila diinginkan. Jangan masukkan NIM,
+            email, atau informasi pribadi lainnya.
+          </p>
+        </section>
+
+        <section class="panel">
+          <div class="panelhead">
+            <div>
+              <small>FORMULIR PENILAIAN</small>
+              <h2>Uji kebiasaan keamanan</h2>
+              <p>Jawab 10 pertanyaan berdasarkan kebiasaan sehari-hari.</p>
+            </div>
+            <span class="tag">10 PERTANYAAN</span>
+          </div>
+
+          <form id="assessment-form">
+            <div class="user-input">
+              <label for="username">Nama pengguna <span>(opsional)</span></label>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                maxlength="40"
+                autocomplete="given-name"
+                placeholder="Tulis nama panggilanmu"
+              >
+              <small>Nama hanya ditampilkan di hasil pada browser ini.</small>
+            </div>
+            <div id="questions"></div>
+            <div class="actions">
+              <button class="btn primary" type="submit">Hitung skor →</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel" id="result" hidden aria-live="polite">
+          <div class="panelhead">
+            <div>
+              <small>HASIL PENILAIAN</small>
+              <h2>Ringkasan skor keamanan</h2>
+              <p>Skor dihitung langsung di browser dan tidak disimpan.</p>
+            </div>
+            <span class="tag" id="result-level">HASIL</span>
+          </div>
+          <div class="scorelayout">
+            <div class="ring" id="score-ring" style="--angle: 0deg">
+              <div>
+                <b id="score">0</b>
+                <small>SKOR / 100</small>
+              </div>
+            </div>
+            <div>
+              <p id="user-greeting"></p>
+              <p id="result-message"></p>
+              <small class="muted" id="result-tip"></small>
+            </div>
+          </div>
+          <div class="categories" id="categories"></div>
+        </section>
+
+        <section class="infogrid">
+          <article>
+            <b>◉ Jawaban anonim</b>
+            <p>Tidak perlu akun atau identitas pribadi.</p>
+          </article>
+          <article>
+            <b>⌁ Hasil pribadi</b>
+            <p>Skor hanya ditampilkan di browser ini dan tidak disimpan.</p>
+          </article>
+          <article>
+            <b>▣ Akses terbatas</b>
+            <p>Halaman ini hanya menampilkan penilaian front-end.</p>
+          </article>
+        </section>
+
+        <footer>
+          CyberCare Scorecard · Proyek pembelajaran
+          <span>Jangan masukkan data pribadi.</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

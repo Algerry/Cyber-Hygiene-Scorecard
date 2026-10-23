@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#0b1120">
+    <title>Login admin · CyberCare</title>
+    <link rel="icon" type="image/png" href="Logo RKS Web.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">
+          <span class="logo">
+            <img src="Logo RKS Web.png" alt="">
+          </span>
+          <span>
+            <b>Cyber<span>Care</span></b>
+            <small>HYGIENE SCORECARD</small>
+          </span>
+        </a>
+        <div class="side-label">MENU UTAMA</div>
+        <a class="nav" href="index.html">▦ &nbsp; Penilaian</a>
+        <a class="nav active" href="login.html">▣ &nbsp; Login Admin</a>
+        <div class="side-note">
+          <b>Privacy first.</b>
+          <p>Nama opsional. Jangan masukkan email atau NIM.</p>
+        </div>
+        <small class="side-bottom">● CyberCare</small>
+      </aside>
+
+      <main class="main">
+        <header class="top">
+          <div>
+            <div class="eyebrow">KEAMANAN DIGITAL / PRIVASI</div>
+            <h1>Login admin</h1>
+            <p>Akses khusus pemilik / host aplikasi.</p>
+          </div>
+          <span class="pill">● Anonim</span>
+        </header>
+
+        <section class="panel login">
+          <div class="loginlogo">▣</div>
+          <small>AREA TERBATAS</small>
+          <h2>Masuk ke dashboard</h2>
+          <p>
+            Halaman ini hanya tampilan front-end. Login admin dan dashboard
+            memerlukan backend.
+          </p>
+          <form id="login-form">
+            <label for="password">Password admin</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            >
+            <button class="btn primary" type="submit">Login admin →</button>
+            <p id="login-message" role="status" hidden></p>
+          </form>
+          <small>Jangan masukkan password sungguhan ke halaman demo ini.</small>
+        </section>
+
+        <footer>
+          CyberCare Scorecard · Proyek pembelajaran
+          <span>Jangan masukkan data pribadi.</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
